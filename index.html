@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Cadastro</title>
+  <meta charset="utf-8">
+  
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <div class="container">
+        <form action="Post">
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Escreva o seu nome" required>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Escreva o seu sobrenome" required>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="Escreva o seu email" required>    
+
+            </div>
+            <div class="endereco">
+                    <label>Cep:</label>
+                    <input name="cep" type="text" id="cep" value="" maxlength="9" required
+                        onblur="pesquisacep(this.value);" /></label>
+                    <label>Rua:</label>
+                    <input name="rua" type="text" id="rua"  /></label>
+                    <label>Bairro:</label>
+                    <input name="bairro" type="text" id="bairro"  /></label>
+                    <label>Cidade:</label>
+                    <input name="cidade" type="text" id="cidade"  /></label>
+                    <label>Estado:</label>
+                    <input name="uf" type="text" id="uf" /></label>
+                    <br>
+                    <div>
+                        <div><input type="checkbox" id="myCheckbox"> Aceitar termos?</div>
+                       
+                        <div class="ocultoum" style="display:none;"><input  type="checkbox" id="myCheckbox" > Aceitar termos?</div>
+                        <div class="ocultodois" style="display:none;"><input  type="checkbox" id="myCheckbox"> Aceitar termos?</div>
+                        <br>
+                        <button id="myButton" disabled>Clique aqui</button>
+                    </div>
+                        
+            </div>
+            
+        </form>
+
+        <style>
+            .nome{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .endereco{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        </style>
+
+    
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src="move.js"></script>
+
+</body>
+
+</html>
